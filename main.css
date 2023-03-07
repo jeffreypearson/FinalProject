@@ -1,0 +1,19 @@
+header {
+    background-color: orange;
+}
+
+main {
+    background-color: grey;
+}
+
+.floatleft {
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.floatright {
+    float: right;
+    padding-left: 2em;
+    padding-bottom: 2em;
+}
