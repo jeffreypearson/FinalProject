@@ -11,7 +11,7 @@
     <meta name="keywords" content="Homework, USU, Data Analytics and Information Systems">
 
     <link rel="stylesheet" href="main.css">
-    <script src="js\login.js"></script>
+    <script defer src="js\login.js"></script>
 </head>
 
 <body>
@@ -28,15 +28,14 @@
         </nav>
         <main>
             <div class="loginBox">
-                <form onsubmit="return validate_login(form)" id="login-form">
-                    <label for="User">User Name</label>
-                    <input type="text" id="User" name="User" id="username-field" required>
-                    <label for="myEmail">Password</label>
-                    <input type="password" id="password" name="password" id="password-field" required>
+                <form id="login-form">
+                    <input type="text" name="username" id="username-field" class="login-form-field"
+                        placeholder="Username">
+                    <input type="password" name="password" id="password-field" class="login-form-field"
+                        placeholder="Password">
                     <input type="submit" value="Login" id="login-form-submit">
                 </form>
             </div>
-            <p id="login-success"></p>
         </main>
 
     </div>
