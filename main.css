@@ -38,6 +38,10 @@ textarea {
     padding: 0;
 }
 
+#graphimg {
+    float: right;
+}
+
 .loginBox {
     border-radius: 2em;
     background-color: white;
@@ -49,21 +53,45 @@ textarea {
 }
 
 .lefthand {
-    float: left;
-    margin-bottom: 2em;
-    width: 55%;
-    height: 350px;
+    grid-area: lefthand;
     background-color: white;
+    border-radius: .5em;
+
 }
 
 .righthand {
-    float: right;
-    margin-bottom: 2em;
-    padding-right: 33%;
-    width: 55%;
-    height: 350px;
+    grid-area: righthand;
     background-color: white;
+    border-radius: .5em;
 }
+
+.left2 {
+    grid-area: left2;
+    background-color: white;
+    border-radius: .5em;
+
+}
+
+.right2 {
+    grid-area: right2;
+    background-color: white;
+    border-radius: .5em;
+}
+
+.gridsuff {
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 20px 1fr 1fr 20px;
+    grid-auto-rows: auto;
+    gap: 10px;
+
+    grid-template-areas:
+        ". lefthand."
+        ". . righthand"
+        ". left2 ."
+        ". . right2"
+}
+
 
 header {
     background-color: #e4790f;
@@ -73,6 +101,7 @@ header {
     padding-left: 105px;
     padding-top: 5px;
     padding-bottom: 5px;
+    border-top: 1%;
 }
 
 header a {
@@ -97,22 +126,11 @@ h1 {
 }
 
 h2 {
-    color: #8C3826;
-}
-
-h3,
-dt {
-    color: #8C3826;
+    color: #070707;
 }
 
 h4 {
-    background-color: #D2B48C;
-    font-size: 1.2em;
-    padding-left: .5em;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    border-bottom: 1px solid #221811;
-    clear: left;
+    color: #696662;
 }
 
 nav {
@@ -211,6 +229,7 @@ footer {
     }
 
     h1 {
+        text-align: center;
         font-size: 3em;
     }
 
@@ -221,11 +240,6 @@ footer {
 
     nav li {
         border-bottom: none;
-    }
-
-    #flow {
-        display: flex;
-        flex-direction: row;
     }
 
     #mobile {
@@ -247,11 +261,19 @@ footer {
     }
 }
 
+@media (max-width: 600px) {
+    header h1 {
+        padding-top: .5em;
+        padding-left: 7%;
+        text-align: left;
+    }
+}
+
 @media (min-width: 1200px) {
     .loginBox {
         border-radius: 2em;
         background-color: white;
-        height: 15em;
+        height: 11em;
         margin-left: 37.5%;
         margin-bottom: 2em;
         border-top: 5em;
