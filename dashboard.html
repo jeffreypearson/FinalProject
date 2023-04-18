@@ -38,12 +38,35 @@
         </nav>
         <main>
             <!--Maybe use a table for this-->
-            <div class="lefthand">
-                <p>Turn into List of Projects</p>
+            <div class="dashboard">
+                <div class="dashleft">
+                    <h3>File Management</h3>
+                    <form id="file-form" method="post" enctype="multipart/form-data"
+                        action="https://5nzkxjc2g9.execute-api.us-west-1.amazonaws.com/v1/upload">
+                        Select File
+                        <input type="file" name="file">
+                        <input type="submit" name="submit" value="Upload">
+                    </form>
+                </div>
+                <div class="dashright">
+                    <h3>Your Project Details</h3>
+                    <p>Lorem ipsum dolor sit amet. Nam totam ipsam quo libero ipsa ea dolorem necessitatibus ut animi
+                        beatae vel cumque dignissimos. Eos ipsa esse aut dolorem labore aut quod iure sit numquam
+                        voluptatum aut amet illo ad distinctio similique quo explicabo recusandae. Et minus nihil non
+                        consequuntur earum est deleniti dolorum sed illo explicabo est iste maxime aut deserunt facilis
+                        ea quos ratione.
+
+                        Sit magnam iusto et dolore vitae est officiis earum eos mollitia consectetur. Est laborum omnis
+                        aut molestiae veniam sit perspiciatis veniam. Ex harum eius vel quis labore vel accusamus ullam.
+                        Ut enim distinctio et porro esse est doloremque sunt a consequatur autem ea minima eligendi.
+
+                        Qui velit aliquid At repudiandae deserunt est molestiae expedita est vitae vitae in quas
+                        consequatur eum architecto voluptas. Et laboriosam dolor sit voluptatum corporis id asperiores
+                        eveniet est repellat quam.</p>
+
+                </div>
             </div>
-            <div class="righthand">
-                <p>Turn into Project Details div</p>
-            </div>
+
 
         </main>
 
