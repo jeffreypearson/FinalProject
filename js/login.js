@@ -10,6 +10,6 @@ loginButton.addEventListener("click", (e) => {
         alert("You have successfully logged in.");
         window.location.replace("dashboard.html");
     } else {
-        alert("Try again, but this time with a better password(web_dev)");
+        alert("Try again, but this time with a better password: web_dev");
     }
 })

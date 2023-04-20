@@ -41,6 +41,7 @@
             <div class="dashboard">
                 <div class="dashleft">
                     <h3>File Management</h3>
+                    <p>API Upload:</p>
                     <form id="file-form" method="post" enctype="multipart/form-data"
                         action="https://5nzkxjc2g9.execute-api.us-west-1.amazonaws.com/v1/upload">
                         Select File
@@ -48,15 +49,14 @@
                         <input type="submit" name="submit" value="Upload">
                     </form>
 
-                    <form action="/FinalProject/dashboard.html/upload" method="post" enctype="multipart/form-data">
+                    <p>Flask Upload:</p>
+                    <form id="file-form" action="/upload" method="post" enctype="multipart/form-data">
 
-                        <label for="file">Choose a file:</label>
+                        <label for="file">Select File</label>
                         <input type="file" id="file" name="file">
-
-                        <label for="key">Enter a key:</label>
                         <input type="submit" value="Upload">
                     </form>
-
+                    <p>Neither of these currently work :(</p>
                 </div>
                 <div class="dashright">
                     <h3>Your Project Details</h3>
